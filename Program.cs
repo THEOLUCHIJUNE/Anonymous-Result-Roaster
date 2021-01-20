@@ -11,7 +11,7 @@ namespace AnonymousResultRoaster
 
             Console.WriteLine("Hello. This is the number of students who sat for the exam.");
 
-            int Students = new Random().Next(1,1000);
+            int Students = new Random().Next(500,1000);
             Console.WriteLine(Students);
 
             int Pass = 0;
@@ -23,7 +23,7 @@ namespace AnonymousResultRoaster
             for(int i = 0; i < Students; i++)
                 {
                     int Score = new Random().Next(1,100);                   
-                    Console.WriteLine(Score);
+                    
                     if (Score>= 70)
                     {
                         Pass = Pass + 1;
@@ -41,8 +41,6 @@ namespace AnonymousResultRoaster
                 }
                 
 
-            Console.WriteLine("Below are the number of students that took the exam"); 
-            Console.WriteLine(Students); 
             Console.WriteLine("Below are the number of students that passed the exam by getting a score of 70 and above");     
             Console.WriteLine(Pass);
             Console.WriteLine("Below are the number of students who got the average score between 50-69"); 
@@ -53,7 +51,7 @@ namespace AnonymousResultRoaster
 
             for (int i = 0; i <Students; i++)
             {
-                Console.WriteLine(Scores[i]);
+                Console.Write(Scores[i] + " , ");
             }
         }
     }
